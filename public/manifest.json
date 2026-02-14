@@ -1,0 +1,55 @@
+{
+    "name": "GuardianVoice AI",
+    "short_name": "GuardianVoice",
+    "description": "Приложение экстренной помощи с голосовой активацией",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#F7F7F8",
+    "theme_color": "#E63946",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "safety",
+        "health"
+    ],
+    "lang": "ru",
+    "shortcuts": [
+        {
+            "name": "Экстренный SOS",
+            "short_name": "SOS",
+            "description": "Быстрый вызов помощи",
+            "url": "/?action=sos",
+            "icons": [
+                {
+                    "src": "/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Карта помощи",
+            "short_name": "Карта",
+            "description": "Найти ближайший центр помощи",
+            "url": "/?action=map",
+            "icons": [
+                {
+                    "src": "/icon-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ]
+}
