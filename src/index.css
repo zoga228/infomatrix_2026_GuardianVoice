@@ -1726,3 +1726,26 @@ h6 {
 .leaflet-control-attribution a {
   color: var(--primary) !important;
 }
+/* Accessibility: visible keyboard focus */
+
+button:focus-visible,
+a[href]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid #8b5cf6;
+  outline-offset: 3px;
+}
+
+/* Respect reduced motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    transition: none;
+  }
+}
